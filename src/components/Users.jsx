@@ -10,7 +10,7 @@ export const Users = () => {
     const [filter, setFilter] = useState("");
 
     useEffect(() => {
-        axios.get("https://finsync-backend-amxr.onrender.com/api/v1/user/bulk?filter=" + filter)
+        axios.get("https://finsync-backend.vercel.app/api/v1/user/bulk?filter=" + filter)
             .then(response => {
                 setUsers(response.data.user)
             })
