@@ -40,7 +40,7 @@ export const SendMoney = () => {
                                 />
                                 <button
                                     onClick={async () => {
-                                        await axios.post("https://finsync-backend-amxr.onrender.com/api/v1/account/transfer", {
+                                        await axios.post("https://finsync-backend.vercel.app/api/v1/account/transfer", {
                                             to: id,
                                             amount
                                         }, {
