@@ -1,8 +1,11 @@
-# React + Vite
+# Finsync 
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+- 💡 Key Features:
+- Secure Authentication: Robust JWT-based login and signup system, ensuring that each user's session is secure.
+- Virtual Balance Management: Users can track and manage their demo account balance, making virtual transfers within the platform.
+- Interactive UI: A sleek, intuitive design powered by TailwindCSS, offering a seamless user experience.
+- Data Validation & Middleware: Zod integration for accurate data validation and custom middleware for secure transaction processing.
 
-Currently, two official plugins are available:
-
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- 🔧 Tech Stack:
+- Frontend: React, Vite, TailwindCSS, React Router
+- Backend: Node.js, Express, MongoDB with Transaction Sessions, JWT for authentication
