@@ -36,16 +36,21 @@ export const Dashboard = () => {
         }
     };
 
-    const handleLogout = () => {
+const handleLogout = () => {
         localStorage.removeItem("token");
         navigate("/signin");
     };
 
     useEffect(() => {
-        fetchBalance();
-        fetchUserInfo(); // Fetch user information when the component mounts
-    }, []);
-
+        const token = localStorage.getItem("token");
+        if (!token) {
+            navigate("/signin"); 
+        } else {
+            fetchBalance();
+            fetchUserInfo(); 
+        }
+    }, [navigate]);
+    
     return (
         <div>
             <Appbar username={username} /> {/* Pass username as prop */}
