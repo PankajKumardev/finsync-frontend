@@ -8,11 +8,13 @@ import { Signup } from "./pages/Signup";
 import { Signin } from "./pages/Signin";
 import { Dashboard } from "./pages/Dashboard";
 import { SendMoney } from "./pages/SendMoney";
+import { Analytics } from "@vercel/analytics/react"
 
 function App() {
   return (
     <>
        <BrowserRouter>
+       <Analytics/>
         <Routes>
           <Route path="/signup" element={<Signup />} />
           <Route path="/signin" element={<Signin />} />
